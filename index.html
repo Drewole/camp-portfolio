@@ -5,10 +5,82 @@
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>Drew Olsen's Web Development Portfolio</title>
+          <!-- Getting some icons from Materialize -->
+          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
           <!-- Resetting the styles -->
           <link rel="stylesheet" href="assets/css/reset.css" />
           <!-- Adding my external stylesheet -->
           <link rel="stylesheet" href="assets/css/style.css" />
      </head>
-     <body></body>
+     <body>
+          <header>
+               <img src="#" alt="Drew Olsen Logo" />
+
+               <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+               </ul>
+          </header>
+          <div class="hero">
+               <h1>A Designer That Can Code</h1>
+               <button href="#portfolio">View My Portfolio</button>
+          </div>
+          <main>
+               <section id="about">
+                    <h2>About Me</h2>
+                    <p>I am a Front-End Web Developer with around ten years of experience. Some might consider me a Designer that can Code. I have an eye for design but also understand, can implement, and explain the technical side of Front End Website Development.</p>
+                    <p>My start in Web Development began ten years ago and I have strived to be on the cutting edge of the new web technologies ever since. I am always trying to increase the quality of work I can provide my clients, and ensure I am using the most appropriate technology for their project.</p>
+                    <h3>My Skill Include But Are Not Limited To:</h3>
+                    <ul>
+                         <li>HTML5</li>
+                         <li>CSS</li>
+                         <li>Responsive Design</li>
+                         <li>PHP</li>
+                         <li>Wordpress</li>
+                         <li>Docker</li>
+                         <li>Git</li>
+                         <li>Webpack</li>
+                         <li>Sketch</li>
+                         <li>Figma</li>
+                         <li>Adobe Suite</li>
+                    </ul>
+                    <aside>
+                         <img src="https://via.placeholder.com/150" alt="Illustration of Drew Olsen" />
+                         <p>Have a project? I'm <span>Available!</span></p>
+                    </aside>
+               </section>
+               <section id="portfolio">
+                    <div class="card">
+                         <div class="overlay">
+                              <h2>Title</h2>
+                              <span class="material-icons">search</span>
+                              <p>Description</p>
+                         </div>
+                         <a href="#"><img src="https://via.placeholder.com/300" alt="Alt" /></a>
+                    </div>
+               </section>
+               <section id="contact">
+                    <h2>Want to get in touch? Contact Me</h2>
+                    <form action="#">
+                         <div>
+                              <input name="name" type="text" />
+                              <label aria-label="name" for="name">Name</label>
+                         </div>
+                         <div>
+                              <input name="email" type="email" />
+                              <label aria-label="email" for="email">Email</label>
+                         </div>
+                         <div>
+                              <textarea name="comment"></textarea>
+                              <label aria-label="comment" for="comment">Whats up?</label>
+                         </div>
+                         <button class="btn">Submit</button>
+                    </form>
+               </section>
+          </main>
+          <footer>
+               <p class="copyright">&copy; Drew Olsen, LLC</p>
+          </footer>
+     </body>
 </html>
