@@ -1,0 +1,9 @@
+/* lets get our variables out of the way */
+:root {
+     --purple: #333;
+}
+
+body {
+     /* WE have Light, Regular, and extra bold */
+     font-family: "Poppins", sans-serif;
+}
