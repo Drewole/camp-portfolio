@@ -253,7 +253,7 @@ aside img {
 }
 
 section.contact {
-     background-color: var(--primary-color-dark);
+     background-color: var(--primary-color);
 }
 .contact h2 {
      font-size: 1.4em;
@@ -266,10 +266,59 @@ section.contact {
 .contact form {
      padding: 0 12% 40px;
 }
+form div {
+     position: relative;
+}
 form label {
      position: absolute;
+     top: ;
+     font-size: 0.8em;
+     color: var(--white);
+}
+form textarea {
+     border: none;
+     line-height: 2em;
+     padding: 10px;
+     margin: 20px 0;
+     width: 100%;
+     border-radius: 4px;
+     background-color: #4f4a72;
+}
+form input[type="text"],
+form input[type="email"] {
+     border: none;
+     line-height: 2em;
+     padding: 10px;
+     margin: 20px 0;
+     width: 100%;
+     border-radius: 4px;
+     background-color: #4f4a72;
+}
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+     background-color: var(--white);
 }
 
+form button {
+     font-size: 0.7rem;
+     background-color: var(--secondary-color);
+     color: #fff;
+     text-transform: uppercase;
+     font-weight: 600;
+     display: inline-block;
+     border-radius: 4px;
+     padding: 15px 20px;
+     transition: all 0.2s ease-in-out;
+     border: none;
+}
+form button:hover {
+     color: var(--primary-color);
+     padding: 15px 35px;
+     text-shadow: var(--text-shadow);
+     background-color: var(--tertiary-color);
+     cursor: pointer;
+}
 /* Footer Styles */
 footer {
      background-color: var(--tertiary-color);
@@ -304,11 +353,16 @@ footer p {
      .hero h1 {
           font-size: 3.8em;
      }
+     .contact form {
+          padding: 0 25% 40px;
+     }
 } /* end of media query */
 
-@media only screen and (min-width: 1280) {
+@media only screen and (min-width: 1280px) {
      section.about {
-          background-color: var(--primary-color);
-          padding: 40px 7% 80px;
+          padding: 40px 22% 80px;
+     }
+     .hero h1 {
+          font-size: 5em;
      }
 } /* end of media query */
