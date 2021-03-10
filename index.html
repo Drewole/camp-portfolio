@@ -11,75 +11,107 @@
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
           <!-- Getting the poppins font -->
           <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet" />
           <!-- Adding my external stylesheet -->
           <link rel="stylesheet" href="assets/css/style.css" />
      </head>
      <body>
-          <header>
-               <img src="https://via.placeholder.com/50" alt="Drew Olsen Logo" />
-
-               <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">My Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-               </ul>
+          <header id="top">
+               <a href="#top" class="logo"
+                    ><svg viewBox="0 0 496 554" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                         <g id="Layer-2" serif:id="Layer 2" transform="matrix(4.16667,0,0,4.16667,0,0)">
+                              <g transform="matrix(0,-1,-1,0,81.9214,59.6228)">
+                                   <path d="M-36.958,-36.958C-56.968,-36.958 -73.188,-20.413 -73.188,-0.002C-73.188,20.411 -56.968,36.958 -36.958,36.958C-16.951,36.958 -0.728,20.411 -0.728,-0.002C-0.728,-20.413 -16.951,-36.958 -36.958,-36.958" style="fill: rgb(64, 166, 156); fill-rule: nonzero;" />
+                              </g>
+                              <g transform="matrix(0,-1,-1,0,81.9214,72.8998)">
+                                   <path d="M-23.681,-23.683C-36.501,-23.683 -46.897,-13.079 -46.897,-0.002C-46.897,13.078 -36.501,23.681 -23.681,23.681C-10.86,23.681 -0.467,13.078 -0.467,-0.002C-0.467,-13.079 -10.86,-23.683 -23.681,-23.683" style="fill: white; fill-rule: nonzero;" />
+                              </g>
+                              <g transform="matrix(1,0,0,1,73.9132,36.0991)">
+                                   <path
+                                        d="M0,20.697C0,20.653 0.003,20.609 0.003,20.565C0.003,20.521 0,20.477 0,20.433L0,-36.099L-13.258,-36.099L-13.258,-7.232C-19.674,-12.493 -27.935,-15.664 -36.954,-15.664C-57.366,-15.664 -73.913,0.555 -73.913,20.565C-73.913,40.577 -57.366,56.796 -36.954,56.796C-16.733,56.796 -0.314,40.874 -0.011,21.118L0,21.118L0,20.697Z"
+                                        style="fill: #fc4e53; fill-rule: nonzero;"
+                                   />
+                              </g>
+                              <g transform="matrix(0,-1,-1,0,36.9596,32.9825)">
+                                   <path d="M-23.682,-23.681C-36.503,-23.681 -46.896,-13.079 -46.896,0C-46.896,13.081 -36.503,23.682 -23.682,23.682C-10.862,23.682 -0.466,13.081 -0.466,0C-0.466,-13.079 -10.862,-23.681 -23.682,-23.681" style="fill: white; fill-rule: nonzero;" />
+                              </g>
+                         </g>
+                    </svg>
+                    Drew Olsen</a
+               >
+               <nav>
+                    <ul>
+                         <li><a href="#about">About</a></li>
+                         <li><a href="#portfolio">My Work</a></li>
+                         <li><a href="#contact">Contact</a></li>
+                    </ul>
+               </nav>
           </header>
-          <div class="hero">
-               <h1>A Designer That Can Code</h1>
-               <button href="#portfolio">View My Portfolio</button>
+          <div class="hero row">
+               <div class="intro-container">
+                    <h1>A Designer That Can Code</h1>
+                    <p>I am a designer that is also a full-stack developer. I can take your project from design to deploy.</p>
+                    <a href="#portfolio"><button>View My Portfolio</button></a>
+               </div>
           </div>
           <main>
-               <section id="about">
-                    <h2>About Me</h2>
-                    <p>I am a Front-End Web Developer with around ten years of experience. Some might consider me a Designer that can Code. I have an eye for design but also understand, can implement, and explain the technical side of Front End Website Development.</p>
-                    <p>My start in Web Development began ten years ago and I have strived to be on the cutting edge of the new web technologies ever since. I am always trying to increase the quality of work I can provide my clients, and ensure I am using the most appropriate technology for their project.</p>
-                    <h3>My Skill Include But Are Not Limited To:</h3>
-                    <ul>
-                         <li>HTML5</li>
-                         <li>CSS</li>
-                         <li>Responsive Design</li>
-                         <li>PHP</li>
-                         <li>Wordpress</li>
-                         <li>Docker</li>
-                         <li>Git</li>
-                         <li>Webpack</li>
-                         <li>Sketch</li>
-                         <li>Figma</li>
-                         <li>Adobe Suite</li>
-                    </ul>
-                    <aside>
-                         <img src="https://via.placeholder.com/150" alt="Illustration of Drew Olsen" />
-                         <p>Have a project? I'm <span>Available!</span></p>
-                    </aside>
+               <section id="about" class="row about">
+                    <div class="container">
+                         <div>
+                              <h2>About Me</h2>
+                              <p>I am a Front-End Web Developer with around ten years of experience. Some might consider me a Designer that can Code. I have an eye for design but also understand, can implement, and explain the technical side of Front End Website Development.</p>
+                              <p>My start in Web Development began ten years ago and I have strived to be on the cutting edge of the new web technologies ever since. I am always trying to increase the quality of work I can provide my clients, and ensure I am using the most appropriate technology for their project.</p>
+                              <h3>My Skills Include But Are Not Limited To:</h3>
+                              <ul>
+                                   <li>HTML5</li>
+                                   <li>CSS</li>
+                                   <li>Responsive Design</li>
+                                   <li>PHP</li>
+                                   <li>Wordpress</li>
+                                   <li>Docker</li>
+                                   <li>Git</li>
+                                   <li>Webpack</li>
+                                   <li>Sketch</li>
+                                   <li>Figma</li>
+                                   <li>Adobe Suite</li>
+                              </ul>
+                         </div>
+                         <aside>
+                              <img src="./assets/images/drewPic.jpg" alt="Illustration of Drew Olsen" />
+                              <p>Have a project? I'm <span>Available!</span></p>
+                         </aside>
+                    </div>
                </section>
-               <section id="portfolio">
+               <section id="portfolio" class="row portfolio">
+                    <h2>Some of My Work.</h2>
                     <div class="card">
+                         <a href="#"><img src="https://via.placeholder.com/300" alt="Alt" /></a>
                          <div class="overlay">
-                              <h2>Title</h2>
+                              <h3>Title</h3>
                               <span class="material-icons">search</span>
                               <p>Description</p>
                          </div>
-                         <a href="#"><img src="https://via.placeholder.com/300" alt="Alt" /></a>
                     </div>
                </section>
-               <section id="contact">
-                    <h2>Want to get in touch? Contact Me</h2>
-                    <form action="#">
-                         <div>
-                              <input name="name" type="text" />
-                              <label aria-label="name" for="name">Name</label>
-                         </div>
-                         <div>
-                              <input name="email" type="email" />
-                              <label aria-label="email" for="email">Email</label>
-                         </div>
-                         <div>
-                              <textarea name="comment"></textarea>
-                              <label aria-label="comment" for="comment">Whats up?</label>
-                         </div>
-                         <button class="btn">Submit</button>
-                    </form>
+               <section id="contact" class="row">
+                    <div class="container">
+                         <h2>Want to get in touch? Contact Me</h2>
+                         <form action="#">
+                              <div>
+                                   <label aria-label="name" for="name">Name</label>
+                                   <input name="name" type="text" />
+                              </div>
+                              <div>
+                                   <label aria-label="email" for="email">Email</label>
+                                   <input name="email" type="email" />
+                              </div>
+                              <div>
+                                   <label aria-label="comment" for="comment">Whats up?</label>
+                                   <textarea name="comment"></textarea>
+                              </div>
+                              <button class="btn">Submit</button>
+                         </form>
+                    </div>
                </section>
           </main>
           <footer>
